@@ -1,0 +1,11 @@
+<h1>Edit your todo</h1>
+
+<%= form_tag "/todos/#{@todo.id}", method: :patch do %>
+  <div>
+  Title: <input type = "text" name = "title" value = "<%= @todo.title %>"><br><br>
+  Note: <input type = "text" name = "note" value = "<%= @todo.note %>"><br><br>
+  Date: <input type = "text" name = "date" value = "<%= @todo.date %>">
+  </div><br><br>
+  <input type = "submit" value = "edit task">
+  <% end %>
+

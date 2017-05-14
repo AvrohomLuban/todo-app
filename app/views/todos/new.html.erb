@@ -1,0 +1,12 @@
+<h1>Create a new todo task</h1>
+
+<%= form_tag "/todos", method: :post do  %>
+  <div>
+    Title: <input type = "text" name = "title">
+    Note: <input type = "text" name = "note">
+    Date: <input type = "text" name = "date">
+    </div>
+    <div><br>
+    <input type = "submit" value = "Create new task">
+    </div>
+    <% end %>

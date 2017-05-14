@@ -1,0 +1,11 @@
+<h1>All of your todos</h1>
+<% @todos.each do |todo|  %>
+  Title: <%= todo.title %><br>
+  Note: <%= todo.note %><br>
+  Date: <%= todo.date %><br>
+  To go to to this task:<a href = "/todos/<%= todo.id %>"> Click here</a>
+  <br><br>
+  <% end %>
+
+  <br><br>
+  To create a new task:<a href = "/todos/new"> Click here</a>
